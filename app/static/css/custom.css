@@ -1,0 +1,47 @@
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+tbody tr {
+    transition: background-color 0.15s ease;
+}
+
+#drop-zone.drag-over {
+    border-color: #3b82f6;
+    background-color: #eff6ff;
+}
+
+.nav-link {
+    transition: all 0.2s ease;
+}
+
+.bg-white.rounded-xl {
+    transition: box-shadow 0.2s ease;
+}
+.bg-white.rounded-xl:hover {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+.animate-spin {
+    animation: spin 1s linear infinite;
+}
+
+@media (max-width: 1023px) {
+    main {
+        margin-left: 0 !important;
+    }
+}
